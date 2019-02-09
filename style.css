@@ -1,39 +1,64 @@
 body { margin: 0px; font: 12px Roboto; line-height: 100%; }
 a { text-decoration: none; color: black; }
 
-#acsc-landing { background: #b0c674; height: 100%; }
+#acsc-landing { background: white; height: 100%; }
 
-#acsc-nav { background: white; position: fixed; top: 0px; left: 0px; width: calc(100% - 60px); padding: 30px; font: 15px Roboto; color: white; box-shadow: 0px 2px 8px rgba(0,0,0,0.25); }
-#acsc-nav a { color: #8ca93c; margin: 0px 30px; font: 15px/15px Roboto; }
-#acsc-nav a:first-child {margin-left: 0px; }
+#acsc-nav { background: white; position: fixed; top: 0px; left: 0px; width: calc(100% - 95px); padding: 20px; padding-left: 75px; font: 15px Roboto; color: white; border-bottom: 2px solid #8ca93c; height: 35px; z-index: 1000; box-shadow: 0px 4px 5px rgba(0,0,0,0.05); }
+#acsc-nav a { color: #8ca93c; margin: 0px 15px; font: 15px/35px Roboto; }
+#acsc-nav a:first-child {margin-left: 0px; position: absolute; left: 20px; top: 15px; }
+#acsc-nav a span { margin-right: 7px; font-weight: bold; }
 
-.nav-apply { position: absolute; top: 20px; right: 25px; background: #8ca93c; color: white; padding: 10px; border-radius: 5px; margin: 0px; font: 15px/15px Roboto; }
+.nav-apply { position: fixed; top: 20px; right: 25px; background: #8ca93c; color: white; padding: 10px; border-radius: 5px; margin: 0px; font: 15px/15px Roboto; }
 
+/* landing */
 .land-content { padding: 150px 40px 80px 40px; text-align: center; }
 
 .land-logo { width: 300px; height: 300px; background-image: url(http://placehold.it/300x300); border-radius: 100%; margin: auto; }
 
-.land-content h1 { margin: 0px; color: white; font: italic 30px/30px Roboto; margin-top: -40px; }
+.land-content h1 { margin: 0px; color: #8ca93c; font: italic 30px/30px Roboto; margin-top: -40px; }
 .land-content h2 { }
-.land-apply { background: white; width: 200px; margin: auto; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #8ca93c; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 50px;  }
+.land-apply { background: #8ca93c; width: 200px; margin: auto; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 50px;  }
 
-.land-content h3 { margin-top: 50px; color: white; font: 15px/15px Roboto; margin-bottom: 10px; }
-.land-arrow { color: white; }
-.land-arrow span { font-size: 20px; text-shadow: 0px 0px 4px rgba(0,0,0,0.4); }
+.land-content h3 { margin-top: 50px; color: #8ca93c; font: 15px/15px Roboto; margin-bottom: 10px; }
+.land-arrow { color: #8ca93c; }
+.land-arrow span { font-size: 20px; text-shadow: 0px 0px 8px rgba(0,0,0,0.2); }
 
-#acsc-about { background: white; padding: 100px; position: relative; }
-#acsc-about h1 { text-align: center; width: 80%; }
-.about-desc  { }
-.about-img { background-image: url(http://placehold.it/300x300); width: 350px; height: 350px; border-radius: 100%; position: absolute; top: 100px; right: 200px;  }
+#acsc-about { background: #c0d486; padding: 100px 0px 50px 0px; position: relative; margin: 0px; }
+.about-cont { margin: auto; width: 65%; height: 350px; position: relative; }
+.about-cont h1 { font: 50px/50px Roboto; position: absolute; top: 70px; margin: 0px; left: 0px;  }
+.about-desc  { position: absolute; top: 150px; right: 0px; font: 18px/24px Roboto; }
+.about-img { background-image: url(http://placehold.it/350x350); width: 350px; height: 350px; border-radius: 100%; margin: auto; }
 
-.about-pm
-.about-pm h2
-.about-pm p
-.pm-jen
-.pm-jecko
+.about-pm { margin: 50px auto; width: 65%; height: 300px; position: relative; border-top: 1px solid white; padding-top: 40px; }
+.about-pm h2 { margin: 0px; text-align: right; margin-left: 230px; font: 25px/25px Roboto; }
+.about-pm p { margin-left: 280px; font: 14px/18px Roboto; }
+.pm-jen { width: 150px; height: 150px; background-image: url(http://placehold.it/150x150); border-radius: 100%; position: absolute; top: 40px; left: 0px; }
+.pm-jecko { width: 150px; height: 150px; background-image: url(http://placehold.it/150x150/000000); border-radius: 100%; position: absolute; top: 190px; left: 80px; }
 
-#acsc-cs
-#acsc-cs h1
-#acsc-cs p
+#abmea { margin: 50px auto; width: 75%; height: 200px; position: relative; border-bottom: 1px solid white; }
+#abmea img {width: 200px; position: absolute; top: 0px; right: 0px; border-radius: 100%; }
 
-.cs-button
+
+#acsc-cs { background: #c0d486; position: relative; color: white;  padding: 0px 70px 70px 70px; text-align: center; }
+#acsc-cs h1 { margin: 0px; text-align: center; font: 35px/35px Roboto; }
+#acsc-cs p { margin: 0px; text-align: center; font: 15px/18px Roboto; }
+
+.cs-button { margin: auto; background: white; width: 200px; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #8ca93c; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 40px;  }
+
+
+#acsc-testimonials { background: #8ca93c; margin: 0px; padding: 70px; text-align: center; min-height: 350px; }
+#acsc-testimonials h1 { margin: 0px; font: 35px/35px Roboto;  }
+
+#acsc-faq { padding: 100px; text-align: center; border-bottom: 1px solid #8ca93c; width: 65%; margin: auto;  }
+#acsc-faq h1 { margin: 0px; }
+#acsc-faq h2 { margin: 0px; margin-top: 20px; }
+.faq-button { margin: auto; background: #c0d486; width: 200px; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px;   }
+
+#acsc-append { text-align: center; padding: 70px; }
+#acsc-append h1 { margin: 0px; }
+.end-button { margin: auto; background: #8ca93c; width: 200px; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px;   }
+
+#acsc-footer { width: 100%; background: #8ca93c; position: relative; height: 80px; }
+.footer-cred { position: absolute; top: 15px; left: 15px; color: white; font: 13px/13px Roboto;  }
+.footer-logos { position: absolute; top: 15px; right: 180px; }
+.footer-acsc { position: absolute; top: 15px; right: 15px; width: 150px; height: 50px; background-image: url(http://placehold.it/150x50/ffffff); }
