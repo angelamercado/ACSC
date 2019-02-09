@@ -18,15 +18,12 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <script type="text/javascript">
-  $('html, body').animate({
-    scrollTop: $("#top").offset().top
-}, 1000);
-</script>
-
-<script src='./jquery.min.js'></script>
-<script src='./jquery-1.7.2.min.js'></script>
-<script src='./jquery.cookie-1.3.1.js'></script>
+  <script type='text/javascript' src="jquery.min.js"></script>
+    <script type='text/javascript' src="popper.min.js"></script>
+    <script type='text/javascript' src="jquery-1.7.2.min.js"></script>
+    <script type='text/javascript' src="jquery.cookie-1.3.1.js"></script>
+    <script type='text/javascript' src="bootstrap.min.js"></script>
+    <script type='text/javascript' src="navbar-fixed.js"></script>
 
   <title>ACSC 2019</title>
 </head>
@@ -35,12 +32,11 @@
 <div id="acsc-landing">
 
   <div id="acsc-nav">
-    <a href="#top"><img src="http://placehold.it/50x50" /></a>
-    <a href="#acsc-about">About ACSC</a>
-    <a href="#acsc-abmea">about mea</a>
-    <a href="#cs">Corporate Sustainability</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact Us</a>
+    <a href="#acsc-landing"><img src="http://placehold.it/45x45" /></a>
+    <a href="#acsc-about"><span class="lnr lnr-leaf"></span>ACSC 2019: TITLE</a>
+    <a href="#cs"><span class="lnr lnr-apartment"></span>Corporate Sustainability</a>
+    <a href="#faq"><span class="lnr lnr-question-circle"></span>FAQ</a>
+    <a href="contactpage"><span class="lnr lnr-phone"></span>Contact Us</a>
     <a href="apply"><div class="nav-apply">Apply for ACSC!</div></a>
   </div>
 
@@ -59,17 +55,26 @@
 
 <div id="acsc-about">
 
-<h1>What is ACSC?</h1>
-<div class="about-desc">
+<div class="about-cont">
+  <div class="about-img"></div>
+
+  <h1>What is ACSC?</h1>
+  <div class="about-desc">
   ACSC is... blah blah
 </div>
-<div class="about-img"></div>
+</div>
 
 <div class="about-pm">
   <h2>Message from the Project Managers</h2>
   <p>jen and jecko say ....</p>
   <div class="pm-jen"></div>
   <div class="pm-jecko"></div>
+</div>
+
+<div id="abmea">
+  <h1>Management Engineering Association</h1>
+  <p>MEA is ...</p>
+  <img src="http://placehold.it/200x200" />
 </div>
 
 </div>
@@ -84,6 +89,39 @@
 
 <div id="acsc-testimonials">
 
+<h1>Testimonials</h1>
+
+testimonials here TBA
+
+</div>
+
+<div id="acsc-faq">
+
+<h1>Frequently Asked Questions</h1>
+
+here TBA
+
+<h2>Still have questions?</h2>
+<a href="contactpage"><div class="faq-button">Contact Us</div></a>
+
+</div>
+
+<div id="acsc-append">
+
+<h1>title/tagline here</h1>
+
+<a href="signuppage"><div class="end-button">Apply now</div></a>
+
+</div>
+
+<div id="acsc-footer">
+  <div class="footer-cred">
+    Designed and Developed by Avery Chan and Angela Mercado<br>
+    Creatives Branding by (promos)<br>
+    Content by (rec&sec core, jen & jecko)<br>
+    Copyright © 2019. All Rights Reserved</div>
+  <div class="footer-logos">other logos here</div>
+  <div class="footer-acsc">white acsc logo here</div>
 </div>
 
 </body>
