@@ -57,20 +57,51 @@
     });
     </script>
 
+    <script>
+    $(function() {
+    var header = $(".normalnav");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 700) {
+            header.removeClass('normalnav').addClass("acsc-nav-alt");
+        } else {
+            header.removeClass("acsc-nav-alt").addClass('normalnav');
+        }
+    });
+});
+</script>
+
   <title>ACSC 2019</title>
 </head>
 
 <body>
 <div id="acsc-landing">
 
-  <div id="acsc-nav">
-    <a href="#acsc-landing"><img src="http://placehold.it/45x45" /></a>
-    <a href="#acsc-about"><span class="lnr lnr-leaf"></span>ACSC 2019: TITLE</a>
-    <a href="#acsc-cs"><span class="lnr lnr-apartment"></span>Corporate Sustainability</a>
-    <a href="#acsc-faq"><span class="lnr lnr-question-circle"></span>FAQ</a>
-    <a href="/contactpage" target="_blank"><span class="lnr lnr-phone"></span>Contact Us</a>
-    <a href="/signup"><div class="nav-apply">Apply for ACSC!</div></a>
-  </div>
+  <div id="acsc-nav"><div class="normalnav">
+    <a href="#acsc-landing"><div class="navlogo"><img src="http://placehold.it/45x45" /></div></a>
+
+    <div class="navlinks"><ul>
+      <li class="one">
+        <a href="#acsc-about">ABOUT ACSC</a>
+      </li>
+      <li class="two">
+        <a href="#acsc-cs">ABOUT CS</a>
+      </li>
+      <li class="three">
+        <a href="#acsc-testimonials" class="test">TESTIMONIALS</a>
+      </li>
+      <li class="four">
+        <a href="#acsc-faq">FAQ & DATES</a>
+      </li>
+      <li class="five">
+        <a href="/contactpage" target="_blank">CONTACT US</a>
+      </li>
+      <hr />
+    </ul></div>
+
+    <a href="/signup"><div class="nav-apply">APPLY FOR ACSC!</div></a>
+  </div></div>
 
   <div class="land-content">
     <div class="land-logo"></div>
@@ -97,33 +128,32 @@
 </div>
 
 <div id="about-pmmea">
-  <div class="about-pm">
-  <h2>Message from the Project Managers</h2>
-  <p>jen and jecko say ....</p>
-  <div class="pm-jen"></div>
-  <div class="pm-jecko"></div>
-</div>
+  <div class="pm-contain">
+    <div class="about-pm">
+    <h2>Message from the Project Managers</h2>
+    <p>jen and jecko say ....</p>
+    <div class="pm-jen"></div>
+    <div class="pm-jecko"></div>
+    </div>
+  </div>
 
-<div class="about-mea">
-  <h1>Management Engineering Association</h1>
-  <p>The Management Engineering Association (MEA) is the Ateneo de Manila University's premier organization for BS Management Engineering majors. The organization’s vision is to develop competent and socially responsible business leaders and corporate managers of the future. It hopes to achieve this through advocating corporate sustainability and helping its members develop their business and management core competencies through academic support, leadership training, and project implementation. MEA has annually hosted ACSC since 2016.</p>
-  <img src="http://placehold.it/200x200" />
-</div>
+  <div class="about-mea">
+    <h1>Management Engineering Association</h1>
+    <p>The Management Engineering Association (MEA) is the Ateneo de Manila University's premier organization for BS Management Engineering majors. The organization’s vision is to develop competent and socially responsible business leaders and corporate managers of the future. It hopes to achieve this through advocating corporate sustainability and helping its members develop their business and management core competencies through academic support, leadership training, and project implementation. MEA has annually hosted ACSC since 2016.</p>
+  </div>
 
-</div>
+  <div id="acsc-cs"><div class="cs-part">
 
-</div>
+  <div class="cs-cont">
+    <h1>What is CS?</h1>
+  <p>short desc of CS</p>
+  </div>
+  <a href="cspage"><div class="cs-button">Learn more about CS!</div></a>
 
-<div id="acsc-cs"><div class="cs-part">
+  </div></div>
 
-<div class="cs-cont">
-  <h1>What is CS?</h1>
-<p>short desc of CS</p>
-</div>
-
-<a href="cspage"><div class="cs-button">Learn more about CS!</div></a>
-
-</div></div>
+</div> <!-- end of about-pmmea -->
+</div> <!-- end of #acsc-about -->
 
 <div id="acsc-testimonials">
 
@@ -135,7 +165,8 @@ testimonials here TBA
 
 <div id="acsc-faq">
 
-<h1>Frequently Asked Questions</h1>
+<div class="faqmain">
+  <h1>Frequently Asked Questions</h1>
 
 <div class="faq-con">
   <button class="accordion">Section 1</button>
@@ -152,6 +183,22 @@ testimonials here TBA
 <div class="panel">
   <p>ACSC 2019 includes various talks by esteemed speakers in the fields of sustainability and business, as well as many fun and exciting activities and workshops where participants can apply what they have learned!</p>
 </div>
+
+<button class="accordion">Who can apply for ACSC 2019?</button>
+<div class="panel">
+  <p>Any grade 10-12 (as of SY 2018-2019) student interested in learning about CS! You do not have to be in a business strand to apply for the conference.</p>
+</div>
+
+<button class="accordion">Who can apply for ACSC 2019?</button>
+<div class="panel">
+  <p>Any grade 10-12 (as of SY 2018-2019) student interested in learning about CS! You do not have to be in a business strand to apply for the conference.</p>
+</div>
+
+<button class="accordion">Who can apply for ACSC 2019?</button>
+<div class="panel">
+  <p>Any grade 10-12 (as of SY 2018-2019) student interested in learning about CS! You do not have to be in a business strand to apply for the conference.</p>
+</div>
+
 </div>
 
 
@@ -172,16 +219,30 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
+</div>
+
+<div class="faqdates">
+
+  <h1>Dates to Remember</h1>
+
+  <div class="calen">calendar here</div>
+  <div class="calen-desc">
+    <span><b>March 3</b> Deadline of Applications</span>
+    <span><b>March 17</b> Release of Accepted Participants</span>
+    <span><b>March 24</b> Deadline of Participant Confirmation</span>
+    <span><b>April 6 & 7</b> Ateneo Corporate Sustainability Conference 2019</span>
+  </div>
+
 <h2>Still have questions?</h2>
 <a href="contactpage"><div class="faq-button">Contact Us</div></a>
 
-</div>
-
-<div id="acsc-append">
-
-<h1>title/tagline here</h1>
+<h2>Ready to apply?</h2>
 
 <a href="signuppage"><div class="end-button">Apply now</div></a>
+
+</div>
+
+<div class="clearing"></div>
 
 </div>
 
