@@ -18,12 +18,44 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script type='text/javascript' src="/scripts/jquery.min.js"></script>
     <script type='text/javascript' src="/scripts/popper.min.js"></script>
     <script type='text/javascript' src="/scripts/jquery-1.7.2.min.js"></script>
     <script type='text/javascript' src="/scripts/jquery.cookie-1.3.1.js"></script>
     <script type='text/javascript' src="/scripts/bootstrap.min.js"></script>
     <script type='text/javascript' src="/scripts/navbar-fixed.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 100, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            //window.location.hash = hash;
+
+            // remove hash etc thing
+            window.location.hash = '';
+          });
+        } // End if
+      });
+    });
+    </script>
 
   <title>ACSC 2019</title>
 </head>
@@ -34,17 +66,17 @@
   <div id="acsc-nav">
     <a href="#acsc-landing"><img src="http://placehold.it/45x45" /></a>
     <a href="#acsc-about"><span class="lnr lnr-leaf"></span>ACSC 2019: TITLE</a>
-    <a href="#cs"><span class="lnr lnr-apartment"></span>Corporate Sustainability</a>
-    <a href="#faq"><span class="lnr lnr-question-circle"></span>FAQ</a>
-    <a href="contactpage"><span class="lnr lnr-phone"></span>Contact Us</a>
-    <a href="signup"><div class="nav-apply">Apply for ACSC!</div></a>
+    <a href="#acsc-cs"><span class="lnr lnr-apartment"></span>Corporate Sustainability</a>
+    <a href="#acsc-faq"><span class="lnr lnr-question-circle"></span>FAQ</a>
+    <a href="/contactpage" target="_blank"><span class="lnr lnr-phone"></span>Contact Us</a>
+    <a href="/signup"><div class="nav-apply">Apply for ACSC!</div></a>
   </div>
 
   <div class="land-content">
     <div class="land-logo"></div>
 
     <h1>Ateneo Corporate Sustainability Conference 2019</h1>
-    <h2>edit April 6-7, 2019 / Ateneo de Manila University</h2>
+    <h2>April 6-7, 2019 / Ateneo de Manila University</h2>
     <a href="apply"><div class="land-apply">Apply as a participant</div></a>
 
     <h3>Learn more about ACSC</h3>
@@ -60,32 +92,38 @@
 
   <h1>What is ACSC?</h1>
   <div class="about-desc">
-  ACSC is... blah blah
+  The Ateneo Corporate Sustainability Conference is a two-day conference for Grade 10-12 high school students interested in learning about Corporate Sustainability! ACSC 2019 aims to highlight how businesses can contribute to sustainable development in the Philippines through solidifying participants’ notions of corporate sustainability: that businesses need not sacrifice the well-being of society and the planet for profit.
 </div>
 </div>
 
-<div class="about-pm">
+<div id="about-pmmea">
+  <div class="about-pm">
   <h2>Message from the Project Managers</h2>
   <p>jen and jecko say ....</p>
   <div class="pm-jen"></div>
   <div class="pm-jecko"></div>
 </div>
 
-<div id="abmea">
+<div class="about-mea">
   <h1>Management Engineering Association</h1>
-  <p>MEA is ...</p>
+  <p>The Management Engineering Association (MEA) is the Ateneo de Manila University's premier organization for BS Management Engineering majors. The organization’s vision is to develop competent and socially responsible business leaders and corporate managers of the future. It hopes to achieve this through advocating corporate sustainability and helping its members develop their business and management core competencies through academic support, leadership training, and project implementation. MEA has annually hosted ACSC since 2016.</p>
   <img src="http://placehold.it/200x200" />
 </div>
 
 </div>
 
-<div id="acsc-cs">
-<h1>What is CS?</h1>
+</div>
+
+<div id="acsc-cs"><div class="cs-part">
+
+<div class="cs-cont">
+  <h1>What is CS?</h1>
 <p>short desc of CS</p>
+</div>
 
 <a href="cspage"><div class="cs-button">Learn more about CS!</div></a>
 
-</div>
+</div></div>
 
 <div id="acsc-testimonials">
 
@@ -99,7 +137,40 @@ testimonials here TBA
 
 <h1>Frequently Asked Questions</h1>
 
-here TBA
+<div class="faq-con">
+  <button class="accordion">Section 1</button>
+<div class="faqpanel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Who can apply for ACSC 2019?</button>
+<div class="faqpanel">
+  <p>Any grade 10-12 (as of SY 2018-2019) student interested in learning about CS! You do not have to be in a business strand to apply for the conference.</p>
+</div>
+
+<button class="accordion">What will happen during ACSC 2019?</button>
+<div class="panel">
+  <p>ACSC 2019 includes various talks by esteemed speakers in the fields of sustainability and business, as well as many fun and exciting activities and workshops where participants can apply what they have learned!</p>
+</div>
+</div>
+
+
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 <h2>Still have questions?</h2>
 <a href="contactpage"><div class="faq-button">Contact Us</div></a>

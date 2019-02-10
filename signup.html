@@ -30,6 +30,50 @@
 
 <body>
 
+  <form name="submit-to-google-sheet" id="formplz" onsubmit="this.reset();">
+    <input name="email" type="text" placeholder="Email" required>
+    <input name="name" type="text" placeholder="First Name" required>
+    <input name="surname" type="text" placeholder="Last Name" required>
+    <input name="Age" type="text" placeholder="Age" required>
+    <input name="Grade Level" type="text" placeholder="year level" required>
+
+    <label class="access-container">
+      <input type="radio" name="Number of Forum Attendees" value="0" required>0
+      <span class="checkmark"></span>
+    </label>
+    <label class="access-container">
+      <input type="radio" name="Number of Forum Attendees" value="1" required>1
+      <span class="checkmark"></span>
+    </label>
+    <label class="access-container">
+      <input type="radio" name="Number of Forum Attendees" value="2" required>2
+      <span class="checkmark"></span>
+    </label>
+
+    <button type="submit" id="test-form">Send</button>
+  </form>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFMQbHGoc1xRgG18OoEYu0i8BsJjJ88vU95mAKQz8o4Tq-WhIx/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script type="text/javascript">
+document.getElementById('formplz').onsubmit = function () {
+  return alert("You have successfully submitted your application for ACSC 2019!")
+  // form.trigger('reset')
+}
+document.getElementById('formplz').onsubmit = form.trigger('reset')
+</script>
+
+
 <div id="acsc-footer">
   <div class="footer-cred">
     Designed and Developed by Avery Chan and Angela Mercado<br>
