@@ -57,7 +57,7 @@
     });
     </script>
 
-  <title>Contact the ACSC Team</title>
+  <title>Learn More about Corporate Sustainability</title>
 </head>
 
 <body>
@@ -91,7 +91,7 @@
 
 <div id="apps-main">
 
-<h1>How to Apply for ACSC</h1>
+<h1>CS PAGE</h1>
 <h2><span>1.</span> Read through the ACSC Website and FAQ!</h2>
 <p>Everything you need to know about ACSC can be found on our website. If you have any questions, feel free to contact us!</p>
 <h2><span>2.</span> Fill up the application form below.</h2>
@@ -104,41 +104,6 @@
 
 </div>
 
-<div id="app-cont">
-
-  <form name="submit-to-google-sheet" id="contactform" action="/">
-
-        <input name="Name" type="text" placeholder="Name" required>
-        <input name="Email" type="email" placeholder="Email" required>
-        <input name="Contact Number" type="text" placeholder="Contact Number (09XX XXX XXXX)" required>
-        <textarea name="Question" type="text" placeholder="Place your question/concern here!" cols="40" rows="5" required></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbws_1u0wqHnmf8grIOt-QQtal_bbCb-KQK0HCcjzb5UDSSut2c/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
-<script type="text/javascript">
-document.getElementById('contactform').onsubmit = function () {
-  // return confirm("Click OK to submit your application for ACSC 2019!");
-  var r = confirm("Click OK to submit your question/concern to the ACSC team!");
-  if (r == true) {
-    form.reset();
-  }
-}
-</script>
-
-</div>
 </div>
 
 <div id="acsc-footer">
