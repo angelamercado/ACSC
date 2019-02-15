@@ -1,6 +1,6 @@
 html { scroll-behavior: smooth; }
 
-body { margin: 0px; font: 12px Roboto; line-height: 100%; }
+body { margin: 0px; font: 12px Antic, sans-seirf; line-height: 100%; }
 a { text-decoration: none; color: black; }
 
 #acsc-landing { background: white; height: 100%; }
@@ -8,19 +8,24 @@ a { text-decoration: none; color: black; }
 /* navbar */
 #acsc-nav { background: white; position: fixed; top: 0px; left: 0px; width: 100%; height: 75px; z-index: 1000; }
 
-#acsc-nav .navlogo { position: absolute; top: 15px; left: 15px; }
+.navlogo { position: absolute; top: 10px; left: 25px; }
+.navlogowhite { position: absolute; top: 0px; left: 0px; }
+.navlogogreen { position: absolute; top: 0px; left: 0px; }
+.navlogo img { width: 21px; }
+.normalnav .navlogogreen { opacity: 0; }
+.acsc-nav-alt .navlogogreen { opacity: 1; }
 
-.nav-apply { position: fixed; top: 20px; right: 25px; background: #8ca93c; color: white; padding: 10px; border-radius: 5px; margin: 0px; font: 15px/15px Roboto; transition: 0.5s all ease-in-out;  }
+.nav-apply { position: fixed; top: 20px; right: 25px; background: #8ca93c; color: white; padding: 10px; border-radius: 5px; margin: 0px; font: 13px/13px Antic; transition: 0.5s all ease-in-out; letter-spacing: 1px; }
 
 
-.navlinks { margin: 0px; position: absolute; left: 35px; top: 3px; width: 640px; }
+.navlinks { margin: 0px; position: absolute; left: 25px; top: 3px; width: 640px; }
 
 .navlinks ul li { margin: 0px;
   display: inline;
   text-align: center;
 }
 
-.navlinks li a {  color: #8ca93c; margin: 0px; font: 12px/33px Roboto; letter-spacing: 1px; transition: 0.5s all ease-in-out; display: inline-block; width: 17%; }
+.navlinks li a {  color: #8ca93c; margin: 0px; font: 12px/33px Antic; letter-spacing: 1px; dtransition: 0.5s all ease-in-out; display: inline-block; width: 17%; }
 .test { letter-spacing: 0px!important; }
 .two:hover ~ hr {
   margin-left: 17.5%;
@@ -42,27 +47,27 @@ hr {
   margin: 0;
   background: white;
   border: none;
-  transition: .3s ease-in-out;
+  transition: .3s margin-left ease-in-out;
 }
 
 
 /* color changing */
-.normalnav { background: #c0d486; width: calc(100% - 95px); height: 35px; padding: 20px; padding-left: 75px; font: 15px Roboto; color: white; }
+.normalnav { background: #c0d486; width: calc(100% - 95px); height: 35px; padding: 20px; padding-left: 75px; font: 15px Antic; color: white; transition: 0.5s all ease-in-out; }
 .normalnav a { color: white!important; }
 .normalnav .nav-apply { background: white; color: #8ca93c; }
-.acsc-nav-alt { background: white; width: calc(100% - 95px); height: 35px;  padding: 20px; padding-left: 75px; font: 15px Roboto; color: #8ca93c; }
+.acsc-nav-alt { background: white; width: calc(100% - 95px); height: 35px;  padding: 20px; padding-left: 75px; font: 15px Antic; color: #8ca93c; transition: 0.5s all ease-in-out; }
 .acsc-nav-alt hr { background: #8ca93c; }
 
 /* landing */
 .land-content { padding: 150px 40px 80px 40px; text-align: center; }
 
-.land-logo { width: 300px; height: 300px; background-image: url(http://placehold.it/300x300); border-radius: 100%; margin: auto; }
-
-.land-content h1 { margin: 0px; color: #8ca93c; font: italic 30px/30px Roboto; margin-top: -40px; }
+.land-logo { width: 150px; height: 390px; }
+.land-logo img { width: 380px;  }
+.land-content h1 { margin: 0px; color: #8ca93c; font: 30px/30px Antic; margin-top: -40px; }
 .land-content h2 { }
-.land-apply { background: #8ca93c; width: 200px; margin: auto; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 50px;  }
+.land-apply { background: #8ca93c; width: 200px; margin: auto; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 50px;  }
 
-.land-content h3 { margin-top: 50px; color: #8ca93c; font: 15px/15px Roboto; margin-bottom: 10px; }
+.land-content h3 { margin-top: 50px; color: #8ca93c; font: 18px/15px Antic; margin-bottom: 10px; }
 .land-arrow { color: #8ca93c; }
 .land-arrow span { font-size: 20px; text-shadow: 0px 0px 8px rgba(0,0,0,0.2); }
 
@@ -70,69 +75,72 @@ hr {
 
 #acsc-about { background: #c0d486; padding: 100px 0px 0px 0px; position: relative; margin: 0px;  }
 
-.about-cont { margin: auto; width: 700px; height: 320px; position: relative; padding-bottom: 20px; }
-.about-cont h1 { font: 50px/50px Roboto; position: absolute; top: 60px; margin: 0px; left: 30px;  }
-.about-desc  { position: absolute; top: 130px; right: -30px; text-align: right; font: 15px/20px Roboto; width: 60%; }
-.about-img { background-image: url(http://placehold.it/320x320); width: 320px; height: 320px; border-radius: 100%; margin: auto; }
+.about-cont { margin: auto; width: 800px; height: 320px; position: relative; padding-bottom: 20px; }
+.about-cont h1 { font: 50px/50px Antic; position: absolute; top: 60px; margin: 0px; left: 30px;  }
+.about-desc  { position: absolute; top: 130px; right: 0px; text-align: center; font: 17px/20px Antic; width: 65%; }
+.about-img { background-image: url(http://placehold.it/320x320); width: 320px; height: 320px; border-radius: 100%; margin: auto; margin-right: 45%; }
 
 
 /* pm + mea */
 #about-pmmea { margin: 0px auto 0px auto; position: relative; height: 520px; background: #c0d486; }
+
+/* about mea */
+
+.about-mea { width: 450px; height: 140px; padding: 40px; position: absolute; top: 20px; left: 0px; background: white; box-shadow: 8px 8px 0px #8ca93c; text-align: right; }
+.about-mea img { display: none; }
+.about-mea h1 { text-align: right; margin: 0px; background: #8ca93c; color: white; display: inline-block; padding: 5px; font: 20px/20px Antic; }
+.about-mea p { margin: 8px 0px; text-align: right; font: 13px/16px Antic; }
 
 /* message from PMs */
 
 .pm-contain { width: 70%; margin: auto; position: relative; height: 460px; left: 50px; }
 
 .about-pm { height: 410px; position: absolute; top: 50px; right: 0px; text-align: right; width: 530px; }
-.about-pm h2 { margin: 0px; text-align: right; font: 25px/25px Roboto; }
+.about-pm h2 { margin: 0px; text-align: right; font: 25px/25px Antic; }
 
-.about-pm p { margin-right: 280px; font: 14px/18px Roboto; text-align: justify; }
+.about-pm p { margin-right: 280px; font: 14px/18px Antic; text-align: justify; }
 .pm-jen { width: 100px; height: 100px; background-image: url(http://placehold.it/100x100/ffffff); border-radius: 100%; position: absolute; bottom: 0px; right: 110px; }
 .pm-jecko { width: 100px; height: 100px; background-image: url(http://placehold.it/100x100/000000); border-radius: 100%; position: absolute; bottom: 0px; right: 0px; }
 
-/* about mea */
-
-.about-mea { width: 450px; height: 100px; padding: 40px; position: absolute; top: 0px; left: 0px; background: white; box-shadow: 8px 8px 0px #8ca93c; }
-.about-mea img { display: none; }
-.about-mea h1 { text-align: right; margin: 0px; }
-.about-mea p { text-align: right; }
 
 /* what is cs */
 
-#acsc-cs { position: absolute; text-align: center;  height: 190px; width: 50%; bottom: 40px; padding-top: 100px; }
+#acsc-cs { position: absolute; text-align: center;  height: 190px; width: 50%; bottom: 15px; padding-top: 130px; }
 
 .cs-part { width: 70%; left: 30%; position: relative; height: 130px; }
 
 .cs-cont { }
 
-.cs-cont h1 { margin: 0px; text-align: left; font: 35px/35px Roboto; }
-.cs-cont p { margin: 0px; text-align: left; font: 15px/18px Roboto; }
+.cs-cont h1 { margin: 0px; text-align: left; font: 35px/35px Antic; }
+.cs-cont p { margin: 0px; text-align: left; font: 15px/18px Antic; }
 
-.cs-button { background: white; width: 170px; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #8ca93c; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px; }
+.cs-button { background: white; width: 170px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #8ca93c; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px; }
 
 
 #acsc-testimonials { background: #8ca93c; margin: 0px; padding: 70px; text-align: center; min-height: 350px; }
-#acsc-testimonials h1 { margin: 0px; font: 35px/35px Roboto;  }
+#acsc-testimonials h1 { margin: 0px; font: 35px/35px Antic; color: white; border-bottom: 5px solid white; padding-bottom: 8px; display: inline-block;  }
 
 /* faq */
-#acsc-faq { padding: 100px 0px; text-align: center; border-bottom: 1px solid #8ca93c; width: 70%; margin: auto;  }
+#acsc-faq { padding: 100px 0px; text-align: center; border-bottom: 0px solid #8ca93c; width: 70%; margin: auto;  }
 
 .faqmain { width: 45%; float: left; }
-.faqmain h1 { margin: 0px; font: 30px/30px Roboto; }
+.faqmain h1 { margin: 0px; font: 30px/30px Antic; }
 
 .faq-con { margin-top: 30px; }
 
 .accordion {
-  background-color: #eee;
+  background-color: #f3f3f3;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 20px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
+  transition: 0.4s; font: 14px/15px Antic;
+margin: 0px;
+border-bottom: 2px solid #8ca93c;
 }
 
 .accordion:hover {
@@ -160,22 +168,105 @@ color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-font: 13px/16px roboto; text-align: justify; padding: 5px 0px;
+font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 
 }
 
 .clearing { clear: both; }
 .faqdates { width: 45%; float: right; }
 .faqdates h2 { margin: 0px; margin-top: 20px; }
-.faq-button { margin: auto; background: #c0d486; width: 200px; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px;   }
+.faq-button { margin: auto; background: #c0d486; width: 200px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px;   }
 
 .calen-desc { text-align: left;}
-.calen-desc span { display: block; font: 14px/27px Roboto; }
+.calen-desc span { display: block; font: 14px/27px Antic; }
 .calen-desc span b { background: #8ca93c; padding: 4px; color: white; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
 
-.end-button { margin: auto; background: #8ca93c; width: 200px; text-align: center; font: 12px/12px roboto; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px;   }
+.end-button { margin: auto; background: #8ca93c; width: 200px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px;   }
 
-#acsc-footer { width: 100%; background: #8ca93c; position: relative; height: 80px; }
-.footer-cred { position: absolute; top: 15px; left: 15px; color: white; font: 13px/13px Roboto;  }
-.footer-logos { position: absolute; top: 15px; right: 180px; }
-.footer-acsc { position: absolute; top: 15px; right: 15px; width: 150px; height: 50px; background-image: url(http://placehold.it/150x50/ffffff); }
+#acsc-footer { width: 100%; background: #8ca93c; position: relative; height: 90px; }
+.footer-cred { position: absolute; top: 15px; left: 15px; color: white; font: 13px/13px Antic; width: 40%;   }
+.footer-logos { position: absolute; top: 15px; right: 105px; }
+.footer-acsc { position: absolute; top: 15px; right: 15px; width: 70px; height: 70px; background: none; }
+.footer-acsc img { width: 70px; }
+
+
+/* app form */
+#acsc-apps { background: white; padding-top: 120px; padding-bottom: 50px; width: 75%; margin: auto; ; }
+
+#apps-main { border-bottom: 2px solid black; padding-bottom: 25px; }
+#apps-main h1 { margin: 0px; }
+
+#app-cont { margin-top: 40px; }
+#app-cont h1 { }
+#app-cont h2 { }
+
+#app-cont input { padding: 20px; ; font-family: Roboto, sans-serif; font-size: 14px; line-height: 14px; border-radius: 5px; border: 0px solid; background: white; border: 1px solid #c0d486; width: 100%; color: black; margin: 0px; margin-bottom: 15px; margin-right: 10px; }
+#app-cont input:focus { color: black; background: #fafafa; }
+
+#app-cont textarea { -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; width: 100%; padding: 20px; ; font-family: Roboto, sans-serif; font-size: 14px; line-height: 14px; border-radius: 5px; border: 0px solid; background: white; border: 1px solid #c0d486; width: 100%; color: black; margin: 0px; margin-bottom: 15px; margin-right: 10px; }
+#app-cont textarea:focus { color: black; background: #fafafa; }
+
+#app-cont .app-gen input { width: 45%; }
+.row2 { text-align: left; }
+#app-cont .row2 input { width: 24%; }
+
+
+.CScheckb { }
+.CScheckb label { position: relative; width: 60px; display: inline-block; }
+.CScheckb .howdidu label { width: 200px; display: block; margin-bottom: 10px; }
+
+.CScheckb input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.CScheckb label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.CScheckb input:checked ~ .checkmark {
+    background-color: #c0d486!important;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.CScheckb input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.CScheckb .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.CScheckb label b { font-size: 16px; line-height: 20px; ; position: relative; left: 26px; }
+
+#app-cont .otherstext input { padding: 10px; margin: 0px; margin-left: 30px; width: 300px }
+
+#app-cont button { background: #8ca93c; padding: 15px; font: 15px/15px Antic; color: white; border-radius: 10px; width: 100%; margin: 40px 0px; cursor: pointer; }

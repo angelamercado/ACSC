@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 5.0, user-scalable=yes, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./assets/ACSCthumbnail.png">
+
+  <meta name="description" content="DESCOFACSC">
+
+   <meta property="og:title" content="Ateneo Corporate Sustainability Conference 2019">
+   <meta property="og:type" content="website">
+   <meta property="og:image" content="IMAGEFORLOADING">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type='text/javascript' src="/scripts/jquery.min.js"></script>
+    <script type='text/javascript' src="/scripts/popper.min.js"></script>
+    <script type='text/javascript' src="/scripts/jquery-1.7.2.min.js"></script>
+    <script type='text/javascript' src="/scripts/jquery.cookie-1.3.1.js"></script>
+    <script type='text/javascript' src="/scripts/bootstrap.min.js"></script>
+    <script type='text/javascript' src="/scripts/navbar-fixed.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 100, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            //window.location.hash = hash;
+
+            // remove hash etc thing
+            window.location.hash = '';
+          });
+        } // End if
+      });
+    });
+    </script>
+
+  <title>Contact the ACSC Team</title>
+</head>
+
+<body>
+
+  <div id="acsc-nav"><div class="normalnav">
+    <a href="#acsc-landing"><div class="navlogo"><div class="navlogowhite"><img src="./assets/ACSClogoLeaf.png" /></div><div class="navlogogreen"><img src="./assets/ACSClogoGreenLeaf.png" /></div></div></a>
+
+    <div class="navlinks"><ul>
+      <li class="one">
+        <a href="/#acsc-about">ABOUT ACSC</a>
+      </li>
+      <li class="two">
+        <a href="/#acsc-cs">ABOUT CS</a>
+      </li>
+      <li class="three">
+        <a href="/#acsc-testimonials" class="test">TESTIMONIALS</a>
+      </li>
+      <li class="four">
+        <a href="/#acsc-faq">FAQ & DATES</a>
+      </li>
+      <li class="five">
+        <a href="/contact" target="_blank">CONTACT US</a>
+      </li>
+      <hr />
+    </ul></div>
+
+    <a href="/apply"><div class="nav-apply">APPLY FOR ACSC!</div></a>
+  </div></div>
+
+<div id="acsc-apps">
+
+<div id="apps-main">
+
+<h1>How to Apply for ACSC</h1>
+<h2><span>1.</span> Read through the ACSC Website and FAQ!</h2>
+<p>Everything you need to know about ACSC can be found on our website. If you have any questions, feel free to contact us!</p>
+<h2><span>2.</span> Fill up the application form below.</h2>
+<p>The applic</p>
+<h2><span>3.</span> Submit your application form by <b>March 3, Sunday</b>!</h2>
+<p>Make sure to send in your form by 11:59 PM of March 3, Sunday, 2019.</p>
+<h2><span>4.</span> Check your email and the ACSC Facebook page for the release of accepted participants.</h2>
+<p>Results will be released by <b>Mid-March 2019</b>. Rest assured that our deliberation process will be as fair as possible for all applicants, so don't worry about it! </p>
+<h2><span>5.</span> To apply for subsidy, please contact the ACSC team!</h2>
+
+</div>
+
+<div id="app-cont">
+
+  <form name="submit-to-google-sheet" id="contactform" action="/">
+
+        <input name="Name" type="text" placeholder="Name" required>
+        <input name="Email" type="email" placeholder="Email" required>
+        <input name="Contact Number" type="text" placeholder="Contact Number (09XX XXX XXXX)" required>
+        <textarea name="Question" type="text" placeholder="Place your question/concern here!" cols="40" rows="5" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbws_1u0wqHnmf8grIOt-QQtal_bbCb-KQK0HCcjzb5UDSSut2c/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script type="text/javascript">
+document.getElementById('contactform').onsubmit = function () {
+  // return confirm("Click OK to submit your application for ACSC 2019!");
+  var r = confirm("Click OK to submit your question/concern to the ACSC team!");
+  if (r == true) {
+    form.reset();
+  }
+}
+</script>
+
+</div>
+</div>
+
+<div id="acsc-footer">
+  <div class="footer-cred">
+    Designed and Developed by Avery Chan and Angela Mercado<br>
+    Creatives Branding by Janelle Angchua, Janelle A. Sy, and Kristen Nepomuceno<br>
+    Content by Christine Apilado, Angela Mercado, Avery Chan, Jm Gonzales, Julia Tamayo, Leeann Ponio, Katrina Cheong, Kim Chan, Azi de Luna, Timothy Olarte, Mikaela Chu, Edric Tanbonliong, and Yana Tan<br>
+    Copyright © 2019. All Rights Reserved</div>
+  <div class="footer-logos">other logos here</div>
+  <div class="footer-acsc"><img src="./assets/ACSClogowhite.png" /></div>
+</div>
+
+</body>
+</html>
