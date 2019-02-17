@@ -14,6 +14,8 @@
    <meta property="og:image" content="IMAGEFORLOADING">
 
   <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
   <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
@@ -27,57 +29,28 @@
     <script type='text/javascript' src="/scripts/bootstrap.min.js"></script>
     <script type='text/javascript' src="/scripts/navbar-fixed.js"></script>
 
-    <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 100, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            //window.location.hash = hash;
-
-            // remove hash etc thing
-            window.location.hash = '';
-          });
-        } // End if
-      });
-    });
-    </script>
-
-
   <title>Apply for ACSC 2019</title>
 </head>
 
 <body>
 
   <div id="acsc-nav"><div class="normalnav">
-    <a href="#acsc-landing"><div class="navlogo"><div class="navlogowhite"><img src="./assets/ACSClogoLeaf.png" /></div><div class="navlogogreen"><img src="./assets/ACSClogoGreenLeaf.png" /></div></div></a>
+    <a href="/"><div class="navlogo"><div class="navlogowhite"><img src="./assets/ACSClogoLeaf.png" /></div><div class="navlogogreen"><img src="./assets/ACSClogoGreenLeaf.png" /></div></div></a>
+
+    <a href="/"><div class="homelink">HOME</div></a>
 
     <div class="navlinks"><ul>
       <li class="one">
-        <a href="/#acsc-about">ABOUT ACSC</a>
+        <a href="/#acsc-about" target="_blank">ABOUT ACSC</a>
       </li>
       <li class="two">
-        <a href="/#acsc-cs">ABOUT CS</a>
+        <a href="/#acsc-cs" target="_blank">ABOUT CS</a>
       </li>
       <li class="three">
-        <a href="/#acsc-testimonials" class="test">TESTIMONIALS</a>
+        <a href="/#acsc-testimonials" class="test" target="_blank">TESTIMONIALS</a>
       </li>
       <li class="four">
-        <a href="/#acsc-faq">FAQ & DATES</a>
+        <a href="/#acsc-faq" target="_blank">FAQ & DATES</a>
       </li>
       <li class="five">
         <a href="/contact" target="_blank">CONTACT US</a>
@@ -93,15 +66,15 @@
 <div id="apps-main">
 
 <h1>How to Apply for ACSC</h1>
-<h2><span>1.</span> Read through the ACSC Website and FAQ!</h2>
+<h2><span>1</span> Read through the ACSC Website and FAQ!</h2>
 <p>Everything you need to know about ACSC can be found on our website. If you have any questions, feel free to contact us!</p>
-<h2><span>2.</span> Fill up the application form below.</h2>
-<p>The applic</p>
-<h2><span>3.</span> Submit your application form by <b>March 3, Sunday</b>!</h2>
+<h2><span>2</span> Fill up the application form below.</h2>
+<p>The application form is a way for the ACSC organizing team to get to know you better as a potential participant. You may answer the form in either English or Filipino!</p>
+<h2><span>3</span> Submit your application form by <b>March 3, Sunday</b>!</h2>
 <p>Make sure to send in your form by 11:59 PM of March 3, Sunday, 2019.</p>
-<h2><span>4.</span> Check your email and the ACSC Facebook page for the release of accepted participants.</h2>
+<h2><span>4</span> Check your email and the ACSC Facebook page for the release of accepted participants.</h2>
 <p>Results will be released by <b>Mid-March 2019</b>. Rest assured that our deliberation process will be as fair as possible for all applicants, so don't worry about it! </p>
-<h2><span>5.</span> To apply for subsidy, please contact the ACSC team!</h2>
+<h2><span>5</span> To apply for subsidy, please fill up the form found <a href="/subsidy"><b>here</b></a> after submitting your application form!</h2>
 
 </div>
 
@@ -118,7 +91,7 @@
       <div class="row2">
         <input name="Nickname" type="text" placeholder="Nickname" required>
         <input name="Email" type="email" placeholder="Email" required>
-        <input name="Contact Number" type="text" placeholder="Contact Number (format: 09XX XXX XXXX)" required>
+        <input name="Contact Number" type="text" placeholder="Contact Number (09XX XXX XXXX)" required>
       </div>
       <div class="row3">
         <input name="High School" type="text" placeholder="Full name of High School" required>
@@ -127,8 +100,10 @@
       <input name="FB Link" type="text" placeholder="Link to Facebook Profile" required></div>
     </div>
 
-    <h2>How well do you understand Corporate Sustainability (CS), on a scale of 1-5? (1: I do not know anything about CS; 5: I understand CS completely!)</h2>
-    <h3>Don't worry, this will not affect the status of your application! It is okay not to know anything about CS. We, the organizing team of ACSC, would like to know our participants' level of CS understanding in order to better tailor the event for you.</h3>
+    <h2>How well do you understand Corporate Sustainability (CS), on a scale of 1-5?</h2>
+    <h3>Fil translation here</h3>
+    <h4><b>1: I do not know anything about CS; 5: I understand CS completely!</b><br>
+      Don't worry, this will not affect the status of your application! It is okay not to know anything about CS. We, the organizing team of ACSC, would like to know our participants' level of CS understanding in order to better tailor the event for you.</h4>
     <div class="CScheckb" style="margin-bottom: 30px;">
     <label>
       <input type="radio" name="CS" value="1" required><b>1</b>
@@ -152,18 +127,23 @@
     </label></div>
 
     <h2>Why do you want to attend ACSC 2019?</h2>
+    <h3>Fil translation here</h3>
     <textarea name="WHY" type="text" placeholder="Answer here. Please limit your answer to 5 sentences at most." cols="40" rows="5" required></textarea>
 
-    <h2>Question 1</h2>
+    <h2>Tell us about a skill you learned and how you were able to teach yourself that certain skill.</h2>
+    <h3>fil translation here</h3>
     <textarea name="Q1" type="text" placeholder="Answer here. Please limit your answer to 5 sentences at most." cols="40" rows="5" required></textarea>
 
-    <h2>Question 2</h2>
+    <h2>Many businesses have had issues about their product packaging (ex. toothpaste, shampoo sachets). How would you want to solve this problem?</h2>
+    <h3>Fil translation here</h3>
     <textarea name="Q2" type="text" placeholder="Answer here. Please limit your answer to 5 sentences at most." cols="40" rows="5" required></textarea>
 
-    <h2>Question 3</h2>
+    <h2>What would you consider of more importance: the details or the bigger picture? Why?</h2>
+    <h3>Fil translation here</h3>
     <textarea name="Q3" type="text" placeholder="Answer here. Please limit your answer to 5 sentences at most." cols="40" rows="5" required></textarea>
 
     <h2>How did you find out about ACSC?</h2>
+    <h3>Fil translation here</h3>
     <div class="CScheckb"><div class="howdidu">
       <label>
       <input type="radio" name="How did you find out about ACSC?" value="Social Media" required><b>Social Media</b>
@@ -202,7 +182,7 @@
 <script type="text/javascript">
 document.getElementById('formplz').onsubmit = function () {
   // return confirm("Click OK to submit your application for ACSC 2019!");
-  var r = confirm("Click OK to submit your application for ACSC 2019!");
+  var r = confirm("Your application for ACSC 2019 has been submitted. Click OK to confirm!");
   if (r == true) {
     form.reset();
   }

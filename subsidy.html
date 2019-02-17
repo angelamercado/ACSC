@@ -59,13 +59,15 @@
     });
     </script>
 
-  <title>Contact the ACSC Team</title>
+
+  <title>ACSC Subsidy Form</title>
 </head>
 
 <body>
 
   <div id="acsc-nav"><div class="normalnav">
     <a href="#acsc-landing"><div class="navlogo"><div class="navlogowhite"><img src="./assets/ACSClogoLeaf.png" /></div><div class="navlogogreen"><img src="./assets/ACSClogoGreenLeaf.png" /></div></div></a>
+
     <a href="/"><div class="homelink">HOME</div></a>
 
     <div class="navlinks"><ul>
@@ -92,26 +94,55 @@
 
 <div id="acsc-apps">
 
-<div id="apps-main" style="border-bottom: 0px; padding-bottom: 0px;">
+<div id="apps-main">
 
-<h1>CoNTACT THE ACSC TEAM</h1>
+<h1>SUBSIDY APPLICATION</h1>
+<h2>Please fill up the following form to request to subsidize your ACSC participant fee (P400 or P600).</h2>
+<p>Filling up this form is not a guarantee of your request being approved. However, we at the ACSC organizing team will do our best to fulfill your request. We don't want financial difficulty to prevent you from attending ACSC 2019!</p>
 
 </div>
 
 <div id="app-cont">
 
-  <form name="submit-to-google-sheet" id="contactform" action="/">
+  <form name="submit-to-google-sheet" id="subsidyform" action="/">
 
-        <input name="Name" type="text" placeholder="Name" required>
-        <input name="Email" type="email" placeholder="Email" required>
+      <div class="row1">
+        <input name="Last Name" type="text" placeholder="Last Name" required>
+        <input name="First Name" type="text" placeholder="First Name" required>
+      </div>
+        <input name="Email Address" type="email" placeholder="Email Address" required>
         <input name="Contact Number" type="text" placeholder="Contact Number (09XX XXX XXXX)" required>
-        <textarea name="Question" type="text" placeholder="Place your question/concern here!" cols="40" rows="5" required></textarea>
+        <input name="High School" type="text" placeholder="Full name of High School" required>
 
-    <button type="submit">Submit</button>
+    <div class="CScheckb" id="pubpriv">
+    <label>
+      <input type="radio" name="Public or Private?" value="Public School" required><b>Public School</b>
+      <span class="checkmark"></span>
+    </label>
+    <label>
+      <input type="radio" name="Public or Private?" value="Private School" required><b>Private School</b>
+      <span class="checkmark"></span>
+    </label>
+    </div>
+
+    <h2>Please explain your situation and why you will be needing your ACSC participant fee to be subsidized.</h2>
+    <h3>Fil translation here</h3>
+    <textarea name="Explanation" type="text" placeholder="Please explain your situation, as well as any other concerns you may have." cols="40" rows="5" required></textarea>
+
+    <h2>Have you submitted your application form for ACSC 2019?<br>
+      You must have submitted your application form prior to requesting for subsidy.</h2>
+    <h3>Fil translation here</h3>
+    <div class="CScheckb">
+      <label>
+      <input type="radio" name="Submitted App?" value="Yes" required><b>Yes</b>
+      <span class="checkmark"></span>
+    </label>
+  </div>
+    <button type="submit" id="subsidyform">Send Subsidy Request Form</button>
   </form>
 
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbws_1u0wqHnmf8grIOt-QQtal_bbCb-KQK0HCcjzb5UDSSut2c/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGQ6kGlGldqq-kt5zOn_966UcojWc0YWEX7EdmczyatuJg8QzX/exec'
     const form = document.forms['submit-to-google-sheet']
 
     form.addEventListener('submit', e => {
@@ -123,9 +154,9 @@
   </script>
 
 <script type="text/javascript">
-document.getElementById('contactform').onsubmit = function () {
+document.getElementById('subsidyform').onsubmit = function () {
   // return confirm("Click OK to submit your application for ACSC 2019!");
-  var r = confirm("Click OK to submit your question/concern to the ACSC team!");
+  var r = confirm("Your application for subsidy has been sent to the ACSC 2019 team. Click OK to confirm.");
   if (r == true) {
     form.reset();
   }

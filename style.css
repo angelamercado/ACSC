@@ -1,7 +1,7 @@
 html { scroll-behavior: smooth; }
 
 body { margin: 0px; font: 12px Antic, sans-seirf; line-height: 100%; }
-a { text-decoration: none; color: black; }
+a { text-decoration: none; color: black; cursor: crosshair; }
 
 #acsc-landing { background: white; height: 100%; }
 
@@ -14,9 +14,15 @@ a { text-decoration: none; color: black; }
 .navlogo img { width: 21px; }
 .normalnav .navlogogreen { opacity: 0; }
 .acsc-nav-alt .navlogogreen { opacity: 1; }
+.acsc-nav-alt .homelink { color: #6cbb88; }
+.acsc-nav-alt .homelink:hover { border-color: #6cbb88; }
 
-.nav-apply { position: fixed; top: 20px; right: 25px; background: #e5972f; color: white; padding: 10px; border-radius: 5px; margin: 0px; font: 13px/13px Antic; transition: 0.5s all ease-in-out; letter-spacing: 1px; }
+.nav-apply { position: fixed; top: 20px; right: 25px; background: #e5972f; color: white; padding: 10px; border-radius: 5px; margin: 0px; font: 13px/13px Antic; transition: 0.5s background ease-in-out; letter-spacing: 1px;  z-index: 1000; }
+.nav-apply:hover { top: 21px; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); }
 
+.homelink { position: absolute; top: 18px; left: 60px; ; color: white; margin: 0px; font: 12px/33px Antic; letter-spacing: 1px; display: inline-block; transition: 0.4s all ease-in-out; border-bottom: 4px solid transparent; }
+.homelink:hover { border-color: white; }
+.homelink { display: none; }
 
 .navlinks { margin: 0px; position: absolute; left: 25px; top: 3px; width: 640px; }
 
@@ -67,20 +73,23 @@ hr {
 .land-content h1 span { color: #e5972f; }
 .land-content h2 { margin: 0px; color: #2a6c4e; font: 18px/18px Antic; width: 310px; position: absolute; top: 295px; right: 0px;  }
 
-.land-apply { background: #e5972f; width: 200px; margin: auto; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 30px;  }
+.land-apply { background: #e5972f; width: 200px; margin: auto; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.1); margin-top: 30px;  }
+.land-apply:hover { position: relative; top: 2px; box-shadow: 0px 3px 6px rgba(0,0,0,0.2);  }
 
 .land-content h3 { margin-top: 30px; color: #6cbb88; font: 18px/15px Antic; margin-bottom: 10px; }
 .land-arrow { color: #6cbb88; }
 .land-arrow span { font-size: 20px; text-shadow: 0px 0px 8px rgba(0,0,0,0.2); }
+.land-arrow:hover { color: #e5972f; }
 
 /* about */
 
 #acsc-about { background: #6cbb88; padding: 100px 0px 0px 0px; position: relative; margin: 0px;  }
 
-.about-cont { margin: auto; width: 800px; height: 320px; position: relative; padding-bottom: 20px; }
-.about-cont h1 { font: 50px/50px Baron Neue; position: absolute; top: 50px; margin: 0px; left: 30px; color: white; border-bottom: 10px solid #2a6c4e; padding-bottom: 5px; }
-.about-desc  { position: absolute; top: 140px; right: 0px; text-align: center; font: 17px/20px Antic; width: 65%;  color: white; }
-.about-img { background-image: url(http://placehold.it/320x320); width: 320px; height: 320px; border-radius: 100%; margin: auto; margin-right: 45%; }
+.about-cont { margin: auto; width: 780px; height: 320px; position: relative; padding-bottom: 20px; }
+.about-cont h1 { font: 50px/50px Baron Neue; position: absolute; top: 50px; margin: 0px; left: 375px; color: white; border-bottom: 10px solid #2a6c4e; padding-bottom: 5px; }
+.about-desc  { position: absolute; top: 140px; right: 0px; text-align: center; font: 17px/20px Antic; width: 450px;  color: white; }
+.about-img { width: 320px; height: 320px; border-radius: 100%; overflow: hidden; }
+.about-img img { width: 320px; height: 320px; border-radius: 100%; }
 
 
 /* pm + mea */
@@ -103,27 +112,35 @@ hr {
 .about-pm h4 { margin: 0px; font: 15px/15px Antic; color: white; }
 
 .about-pm p { margin-right: 280px; font: 14px/18px Antic; text-align: justify; }
-.pm-jen { width: 100px; height: 100px; background-image: url(http://placehold.it/100x100/ffffff); border-radius: 100%; position: absolute; bottom: 0px; right: 110px; }
-.pm-jecko { width: 100px; height: 100px; background-image: url(http://placehold.it/100x100/000000); border-radius: 100%; position: absolute; bottom: 0px; right: 0px; }
+.about-pm img { width: 100px; height: 100px; }
+.pm-jen { width: 100px; height: 100px; overflow: hidden; border-radius: 100%; position: absolute; bottom: 0px; right: 110px; }
+.pm-jecko { width: 100px; height: 100px; overflow: hidden; border-radius: 100%; position: absolute; bottom: 0px; right: 0px; }
 
 
 /* what is cs */
 
-#acsc-cs { position: absolute; text-align: center;  height: 190px; width: 50%; bottom: 15px; padding-top: 130px; }
+#acsc-cs { position: absolute; text-align: center;  height: 190px; width: 50%; bottom: 45px; padding-top: 100px; }
 
-.cs-part { width: 70%; left: 30%; position: relative; height: 130px; text-align: left; }
+.cs-part { width: 600px; left: 25%; position: relative; height: 130px; text-align: left; }
 
 .cs-cont { }
 
 .cs-cont h1 { margin: 0px; text-align: left; font: 35px/35px Baron Neue; color: white; border-bottom: 10px solid #2a6c4e; display: inline-block; padding-bottom: 5px; }
 .cs-cont p { margin: 15px 0px; text-align: left; font: 15px/18px Antic; color: white; }
 
-.cs-button { background: white; width: 170px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #2a6c4e; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px; }
+.cs-button { background: white; width: 170px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #2a6c4e; box-shadow: 0px 3px 5px rgba(0,0,0,0.1); margin-top: 20px; }
+.cs-button:hover { margin-top: 22px; box-shadow: 0px 3px 6px rgba(0,0,0,0.2);  }
 
 /* testimonials */
 
 #acsc-testimonials { background: #2a6c4e; margin: 0px; padding: 70px; text-align: center; min-height: 350px; }
 #acsc-testimonials h1 { margin: 0px; font: 35px/35px Baron Neue; color: white; border-bottom: 5px solid white; padding-bottom: 8px; display: inline-block;  }
+
+.ACSCslider img { width: 250px; height: 250px; border-radius: 100%; margin: auto; }
+.ACSCslider div { text-align: center; }
+.ACSCslider h2 { font: 20px/20px Baron Neue; color: #e5972f; background: white; padding: 5px 8px; display: inline-block; margin: 0px; margin-top: 15px;  }
+.ACSCslider h3 { margin: 0px; margin: 8px 0px; color: white; font: 15px/15px Antic; border-bottom: 2px solid #e5972f; padding-bottom: 5px; }
+.ACSCslider p { text-align: justify; color: white; font: 15px/18px Antic; max-height: 300px; overflow: auto;  }
 
 /* faq */
 #acsc-faq { padding: 100px 0px; text-align: center; border-bottom: 0px solid #2a6c4e; width: 70%; margin: auto;  }
@@ -177,18 +194,21 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 
 }
 
+.panel a { border-bottom: 2px solid #e5972f; }
 .clearing { clear: both; }
 .faqdates { width: 45%; float: right; }
 
 .faqdates h1 { margin: 0px; font: 30px/30px Baron Neue; margin-bottom: 10px; }
-.faqdates h2 { margin: 0px; margin-top: 20px; font: 30px/30px Baron Neue;}
-.faq-button { margin: auto; background: #2a6c4e; width: 200px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px; margin-bottom: 40px;  }
+.faqdates h2 { margin: 0px; margin-top: 30px; font: 30px/30px Baron Neue;}
+.faq-button { margin: auto; background: #2a6c4e; width: 200px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.1); margin-top: 20px; margin-bottom: 40px;  }
+.faq-button:hover { box-shadow: 0px 3px 6px rgba(0,0,0,0.2); position: relative; top: 2px;  }
 
 .calen-desc { text-align: left; margin-bottom: 40px; }
 .calen-desc span { display: block; font: 14px/27px Antic; }
 .calen-desc span b { background: #2a6c4e; padding: 4px; color: white; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
 
-.end-button { margin: auto; background: #e5972f; width: 200px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin-top: 20px;   }
+.end-button { margin: auto; background: #e5972f; width: 200px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: white; box-shadow: 0px 3px 5px rgba(0,0,0,0.1); margin-top: 20px;   }
+.end-button:hover { margin-top: 22px; box-shadow: 0px 3px 6px rgba(0,0,0,0.2);  }
 
 /* footer */
 #acsc-footer { width: 100%; background: #2a6c4e; position: relative; height: 90px; }
@@ -202,20 +222,26 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 /* app form */
 #acsc-apps { background: white; padding-top: 120px; padding-bottom: 50px; width: 75%; margin: auto; ; }
 
-#apps-main { border-bottom: 2px solid black; padding-bottom: 25px; }
-#apps-main h1 { margin: 0px; }
+#apps-main { border-bottom: 1px solid #e5972f; padding-bottom: 25px; }
+#apps-main h1 { margin: 0px; text-align: center; font: 30px/30px Baron Neue; color: #e5972f; border-bottom: 8px solid #e5972f; padding-bottom: 8px; margin-bottom: 15px;  }
+#apps-main h2 { margin: 0px; color: #2a6c4e; font: 20px/25px Antic; }
+#apps-main h2 span { background: #2a6c4e; color: white; width: 25px; display: inline-block; height: 25px; line-height: 25px; text-align: center; border-radius: 100%; }
+#apps-main p { margin: 5px 0px 15px 0px; font: 14px/16px Antic, sans-serif; }
+#apps-main b { border-bottom: 2px solid #e5972f; }
 
 #app-cont { margin-top: 40px; }
-#app-cont h1 { line-height: 110%; }
-#app-cont h2 { line-height: 110%; }
-#app-cont h3 { line-height: 110%; }
+#app-cont h1 { line-height: 110%; color: #2a6c4e;  }
+#app-cont h2 { line-height: 110%; color: #2a6c4e; font: 20px/20px Antic; margin: 20px 0px 0px 0px; }
+#app-cont h3 { line-height: 110%; margin: 3px 0px 15px 0px; font: 20px/20px Antic; color: #6cbb88; }
+#app-cont h4 { margin: -5px 0px 15px 0px; font: 15px/21px Antic;  }
+#app-cont h4 b { border-bottom: 2px solid #e5972f; }
 
-#app-cont input { padding: 20px; ; font-family: Roboto, sans-serif; font-size: 14px; line-height: 14px; border-radius: 5px; border: 0px solid; background: white; border: 1px solid #6cbb88; width: 100%; color: black; margin: 0px; margin-bottom: 15px; margin-right: 10px; }
+#app-cont input { padding: 20px; ; font-family: Roboto, sans-serif; font-size: 14px; line-height: 14px; border-radius: 5px; border: 0px solid; background: white; border: 1px solid #6cbb88; width: calc(100% - 40px); color: black; margin: 0px; margin-bottom: 15px; margin-right: 10px; }
 #app-cont input:focus { color: black; background: #fafafa; }
 
 #app-cont textarea { -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
-            box-sizing: border-box; width: 100%; padding: 20px; ; font-family: Roboto, sans-serif; font-size: 14px; line-height: 14px; border-radius: 5px; border: 0px solid; background: white; border: 1px solid #6cbb88; width: 100%; color: black; margin: 0px; margin-bottom: 15px; margin-right: 10px; }
+            box-sizing: border-box; width: calc(100%-40px); padding: 20px; ; font-family: Roboto, sans-serif; font-size: 14px; line-height: 14px; border-radius: 5px; border: 0px solid; background: white; border: 1px solid #6cbb88; width: 100%; color: black; margin: 0px; margin-bottom: 15px; margin-right: 10px; }
 #app-cont textarea:focus { color: black; background: #fafafa; }
 
 #app-cont .app-gen input { width: 45%; }
@@ -226,6 +252,8 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 .CScheckb { }
 .CScheckb label { position: relative; width: 60px; display: inline-block; }
 .CScheckb .howdidu label { width: 200px; display: block; margin-bottom: 10px; }
+#pubpriv label { position: relative; width: 150px; display: inline-block; }
+#pubpriv { padding-bottom: 15px; }
 
 .CScheckb input {
     position: absolute;
@@ -326,14 +354,14 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 
 #acsc-cs { position: static; text-align: center; height: auto; width: 400px; margin: auto; padding-top: 50px; left: auto; padding-bottom: 90px; text-align: center; }
 
-.cs-part { width: auto; position: static; height: 130px; text-align: left; text-align: center; }
+.cs-part { width: 80%; position: static; height: 190px; text-align: left; text-align: center; margin: auto; }
 
 .cs-cont { text-align: center; }
 
 .cs-cont h1 { margin: 0px; text-align: left; font: 35px/35px Baron Neue; color: white; border-bottom: 10px solid #2a6c4e; display: inline-block; padding-bottom: 5px; }
 .cs-cont p { margin: 15px 0px; font: 15px/18px Antic; color: white; text-align: center; }
 
-.cs-button { background: white; width: 170px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #2a6c4e; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin: auto; margin-top: 30px; }
+.cs-button { background: white; width: 170px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #2a6c4e; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin: auto; margin-top: 30px; margin-bottom: 30px; }
 
 
 }
@@ -397,6 +425,7 @@ hr {
 @media screen and (max-width: 660px) {
 .navlinks { display: none; }
 .navlinks li a { width: 15%; }
+.homelink { display: inline-block; }
 }
 
 @media screen and (max-width: 540px) {
