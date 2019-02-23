@@ -7,14 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="./assets/ACSCthumbnail.png">
 
-  <meta name="description" content="DESCOFACSC">
+  <meta name="description" content="The Ateneo Corporate Sustainability Conference is a two-day conference for Grade 10-12 high school students interested in learning about Corporate Sustainability.">
 
    <meta property="og:title" content="Ateneo Corporate Sustainability Conference 2019">
    <meta property="og:type" content="website">
-   <meta property="og:image" content="IMAGEFORLOADING">
+   <meta property="og:image" content="https://k.nickpic.host/BfdWLx.png">
 
+
+       <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+       <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
   <link rel="stylesheet" href="./style.css">
-
   <link rel="stylesheet" href="./fonts/stylesheet.css">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
@@ -29,36 +31,45 @@
     <script type='text/javascript' src="/scripts/bootstrap.min.js"></script>
     <script type='text/javascript' src="/scripts/navbar-fixed.js"></script>
 
-  <title>ACSC Subsidy Form</title>
+    <link rel='stylesheet' href='./tickingcircles/TimeCircles.css'>
+      <script src='./tickingcircles/TimeCircles.js'></script>
+
+
+  <title>Apply for Transportation Subsidy</title>
 </head>
 
 <body>
 
   <div id="acsc-nav"><div class="normalnav">
-    <a href="/#acsc-landing" target="_blank"><div class="navlogo"><div class="navlogowhite"><img src="./assets/ACSClogoLeaf.png" /></div><div class="navlogogreen"><img src="./assets/ACSClogoGreenLeaf.png" /></div></div></a>
-
-    <a href="/" target="_blank"><div class="homelink">HOME</div></a>
+    <a href="/#acsc-landing"><div class="navlogo"><div class="navlogowhite"><img src="./assets/ACSClogoLeaf.png" /></div><div class="navlogogreen"><img src="./assets/ACSClogoGreenLeaf.png" /></div></div></a>
+    <a href="/"><div class="homelink">HOME</div></a>
 
     <div class="navlinks"><ul>
       <li class="one">
-        <a href="/#acsc-about" target="_blank">ABOUT ACSC</a>
+        <a href="/#acsc-about">ABOUT ACSC</a>
       </li>
       <li class="two">
-        <a href="/#acsc-cs" target="_blank">ABOUT CS</a>
+        <a href="/#acsc-cs">ABOUT CS</a>
       </li>
       <li class="three">
-        <a href="/#acsc-testimonials" class="test" target="_blank">TESTIMONIALS</a>
+        <a href="/#acsc-testimonials" class="test">TESTIMONIALS</a>
       </li>
       <li class="four">
-        <a href="/#acsc-faq" target="_blank">FAQ & DATES</a>
+        <a href="/#acsc-faq" class="test">FAQ & DATES</a>
       </li>
       <li class="five">
-        <a href="/contact" target="_blank">CONTACT US</a>
+        <a href="/contact">CONTACT US</a>
       </li>
       <hr />
-    </ul></div>
+    </ul>
+  </div>
 
-    <a href="/apply"><div class="nav-apply">APPLY FOR ACSC!</div></a>
+
+  <div class="head-count"><div id="DateCountdown" data-date="2019-03-03 23:59:59" style="width: 65px;"></div></div>
+  <div class="head-count-desc">LEFT TO</div>
+  <script src='./tickingcircles/countdown.js'></script>
+
+    <a href="/apply" title="Apply for ACSC 2019"><div class="nav-apply">APPLY FOR ACSC!</div></a>
   </div></div>
 
 <div id="acsc-apps">
@@ -66,7 +77,7 @@
 <div id="apps-main">
 
 <h1>subsidy application</h1>
-<h2>Please fill up the following form to request to subsidize your ACSC participant fee (P400 or P600).</h2>
+<h2>Please fill up the following form to request to subsidize your transportation to ACSC.</h2>
 <p>Filling up this form is not a guarantee of your request being approved. However, we at the ACSC organizing team will do our best to fulfill your request. We don't want financial difficulty to prevent you from attending ACSC 2019!</p>
 
 </div>
@@ -94,7 +105,11 @@
     </label>
     </div>
 
-    <h2>Please explain your situation and why you will be needing your ACSC participant fee to be subsidized.</h2>
+<h2>How much subsidy will you be requiring? (Net transportation back and forth for both days of the event)</h2>
+<h3>Fil translation</h3>
+<input name="Subsidy Amount" type="text" placeholder="Net transportation back and forth for both days of the event" required>
+
+    <h2>Please explain your situation and why you will be needing your transportation fee to ACSC to be subsidized.</h2>
     <h3>Fil translation here</h3>
     <textarea name="Explanation" type="text" placeholder="Please explain your situation, as well as any other concerns you may have." cols="40" rows="5" required></textarea>
 
