@@ -404,6 +404,11 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 
 }
 
+@media screen and (max-width: 1090px) {
+.leftimg { float: none; width: 70%; margin-top: 0px;  margin: 20px auto;  }
+.leftimg img { width: 100%; }
+}
+
 @media screen and (max-width: 1070px) {
 
 /* pm + mea */
