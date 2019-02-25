@@ -80,6 +80,9 @@
 <h2>Please fill up the following form to request to subsidize your transportation to ACSC.</h2>
 <p>Filling up this form is not a guarantee of your request being approved. However, we at the ACSC organizing team will do our best to fulfill your request. We don't want financial difficulty to prevent you from attending ACSC 2019!</p>
 
+<h2>Sagutin ang form na ito upang ma-subsidize ang iyong transportasyon para sa ACSC.</h2>
+<p>Sa pagsasagot ng form na ito, walang katiyakang maaaprubahan ang iyong panukala, ngunit huwag mag-alala, sisikapin pa rin namin bilang tagapamahala ng ACSC na bigyan kayo ng pamasahe. Ayaw naming maging hadlang ang pera sa pakikilahok mo sa ACSC 2019!</p>
+
 </div>
 
 <div id="app-cont">
@@ -87,42 +90,43 @@
   <form name="submit-to-google-sheet" id="subsidyform" action="/">
 
       <div class="row1">
-        <input name="Last Name" type="text" placeholder="Last Name" required>
-        <input name="First Name" type="text" placeholder="First Name" required>
+        <input name="Last Name" type="text" placeholder="Last Name / Apelyido" required>
+        <input name="First Name" type="text" placeholder="First Name / Pangalan" required>
       </div>
         <input name="Email Address" type="email" placeholder="Email Address" required>
         <input name="Contact Number" type="text" placeholder="Contact Number (09XX XXX XXXX)" required>
-        <input name="High School" type="text" placeholder="Full name of High School" required>
+        <input name="High School" type="text" placeholder="Full name of High School / Buong Pangalan ng Paaralan" required>
 
     <div class="CScheckb" id="pubpriv">
     <label>
-      <input type="radio" name="Public or Private?" value="Public School" required><b>Public School</b>
+      <input type="radio" name="Public or Private?" value="Public School" required><b>Public School / Pampublikong Paaralan</b>
       <span class="checkmark"></span>
     </label>
     <label>
-      <input type="radio" name="Public or Private?" value="Private School" required><b>Private School</b>
+      <input type="radio" name="Public or Private?" value="Private School" required><b>Private School / Pampribadong Paaralan</b>
       <span class="checkmark"></span>
     </label>
     </div>
 
 <h2>How much subsidy will you be requiring? (Net transportation back and forth for both days of the event)</h2>
-<h3>Fil translation</h3>
+<h3>Magkano ang babayaran para sa transportasyon? (Balikan sa dalawang araw ng ACSC)</h3>
 <input name="Subsidy Amount" type="text" placeholder="Net transportation back and forth for both days of the event" required>
 
     <h2>Please explain your situation and why you will be needing your transportation fee to ACSC to be subsidized.</h2>
-    <h3>Fil translation here</h3>
-    <textarea name="Explanation" type="text" placeholder="Please explain your situation, as well as any other concerns you may have." cols="40" rows="5" required></textarea>
+    <h3>Ipaliwanag ang iyong sitwasyon at kung bakit mong kailangan ng subsidy para sa iyong transportasyon.</h3>
+    <textarea name="Explanation" type="text" placeholder="Please explain your situation, as well as any other concerns you may have. /  Ilahad ang iyong tiyak na kalagayan, pati na rin ang iba pang mga pag-aalala tungkol sa pagsali mo sa aktibidad." cols="40" rows="5" required></textarea>
 
     <h2>Have you submitted your application form for ACSC 2019?<br>
       You must have submitted your application form prior to requesting for subsidy.</h2>
-    <h3>Fil translation here</h3>
+    <h3>Naipasa mo na ba ang iyong application form para sa ACSC 2019?<br>
+    Kailangan mong ipasa ang iyong application form bago humingi ng subsidy.</h3>
     <div class="CScheckb">
       <label>
       <input type="radio" name="Submitted App?" value="Yes" required><b>Yes</b>
       <span class="checkmark"></span>
     </label>
   </div>
-    <button type="submit" id="subsidyform">Send Subsidy Request Form</button>
+    <button type="submit" id="subsidyform">Send Transportation Subsidy Request / Ipasa ang Transportation Subsidy Request</button>
   </form>
 
   <script>
@@ -153,10 +157,11 @@ document.getElementById('subsidyform').onsubmit = function () {
 <div id="acsc-footer">
   <div class="footer-logos"><img src="./assets/MEAlogoWhite.png" /></div>
   <div class="footer-acsc"><img src="./assets/ACSClogowhite.png" /></div>
+  <div class="footer-fb"><a href="https://www.facebook.com/AteneoCorporateSustainabilityConference/"><img src="./assets/fbicon.png" /></a></div>
   <div class="footer-cred">
     Designed and Developed by Avery Chan<br>
+    Content by Christine Apilado, Angela Mercado, Jm Gonzales, Julia Tamayo, Leeann Ponio, Katrina Cheong, Kim Chan, Azi de Luna, Timothy Olarte, Mikaela Chu, Edric Tanbonliong, and Yana Tan<br>
     Creatives Branding by Janelle Angchua, Janelle A. Sy, and Kristen Nepomuceno<br>
-    Content by Christine Apilado, Angela Mercado, Avery Chan, Jm Gonzales, Julia Tamayo, Leeann Ponio, Katrina Cheong, Kim Chan, Azi de Luna, Timothy Olarte, Mikaela Chu, Edric Tanbonliong, and Yana Tan<br>
     Copyright © 2019. All Rights Reserved</div>
 </div>
 

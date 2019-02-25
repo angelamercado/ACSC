@@ -14,13 +14,13 @@ a { text-decoration: none; color: black; cursor: crosshair; }
 .navlogo img { width: 21px; }
 .normalnav .navlogogreen { opacity: 0; }
 .acsc-nav-alt .navlogogreen { opacity: 1; }
-.acsc-nav-alt .homelink { color: #6cbb88; }
-.acsc-nav-alt .homelink:hover { border-color: #6cbb88; }
+.acsc-nav-alt .homelink { color: #2a6c4e; }
+.acsc-nav-alt .homelink:hover { border-color: #2a6c4e; }
 
 .nav-apply { position: fixed; top: 20px; right: 25px; background: #e5972f; color: white; padding: 10px; border-radius: 5px; margin: 0px; font: 13px/13px Antic; transition: 0.5s background ease-in-out; letter-spacing: 1px;  z-index: 1000; }
 .nav-apply:hover { top: 21px; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); }
 
-.homelink { position: absolute; top: 18px; left: 60px; ; color: white; margin: 0px; font: 12px/33px Antic; letter-spacing: 1px; display: inline-block; transition: 0.4s all ease-in-out; border-bottom: 4px solid transparent; }
+.homelink { position: absolute; top: 19px; left: 60px; ; color: white; margin: 0px; font: 14px/33px Antic; letter-spacing: 1px; display: inline-block; transition: 0.4s all ease-in-out; border-bottom: 4px solid transparent; }
 .homelink:hover { border-color: white; }
 .homelink { display: none; }
 
@@ -64,7 +64,7 @@ hr {
 .normalnav a { color: white!important; }
 .normalnav .nav-apply { background: white; color: #2a6c4e; }
 .acsc-nav-alt { background: white; width: calc(100% - 95px); height: 35px;  padding: 20px; padding-left: 75px; font: 15px Antic; color: #2a6c4e; transition: 0.5s all ease-in-out; }
-.acsc-nav-alt hr { background: #6cbb88; }
+.acsc-nav-alt hr { background: #2a6c4e; }
 
 /* landing */
 .land-content { padding: 140px 40px 80px 40px; text-align: center; }
@@ -88,8 +88,9 @@ hr {
 #acsc-about { background: #6cbb88; padding: 100px 0px 0px 0px; position: relative; margin: 0px;  }
 
 .about-cont { margin: auto; width: 780px; height: 320px; position: relative; padding-bottom: 20px; }
-.about-cont h1 { font: 50px/50px Baron Neue; position: absolute; top: 50px; margin: 0px; left: 375px; color: white; border-bottom: 10px solid #2a6c4e; padding-bottom: 5px; }
-.about-desc  { position: absolute; top: 140px; right: 0px; text-align: center; font: 17px/20px Antic; width: 450px;  color: white; }
+.about-cont h1 { font: 50px/50px Baron Neue; position: absolute; top: 30px; margin: 0px; left: 375px; color: white; border-bottom: 10px solid #2a6c4e; padding-bottom: 5px; }
+.about-desc  { position: absolute; top: 110px; right: 0px; text-align: center; font: 17px/20px Antic; width: 460px;  color: white; }
+.about-desc b {  background: #e5972f;  font-weight: normal; }
 .about-img { width: 320px; height: 320px; border-radius: 100%; overflow: hidden; }
 .about-img img { width: 320px; height: 320px; border-radius: 100%; }
 
@@ -103,7 +104,7 @@ hr {
 .about-mea img { display: none; }
 .about-mea h1 { text-align: right; margin: 0px; background: #e5972f; color: white; display: inline-block; padding: 5px; font: 20px/20px Baron Neue; }
 .about-mea p { margin: 8px 0px; text-align: right; font: 13px/16px Antic; }
-
+.about-mea p b {  border-bottom: 2px solid #e5972f;  font-weight: normal; }
 /* message from PMs */
 
 .pm-contain { width: 70%; margin: auto; position: relative; height: 460px; left: 50px; }
@@ -113,7 +114,8 @@ hr {
 .about-pm h3 { margin: 0px; font: 18px/18px Antic; color: white; background: #e5972f; display: inline-block; padding: 5px; }
 .about-pm h4 { margin: 0px; font: 15px/15px Antic; color: white; }
 
-.about-pm p { margin-right: 0px; font: 14px/18px Antic; text-align: justify; color: white; }
+.about-pm p { margin-right: 0px; font: 15px/18px Antic; text-align: justify; color: white; }
+.about-pm p b {  background: #e5972f;  font-weight: normal; }
 .about-pm img { width: 100px; height: 100px; }
 .pm-jen { width: 100px; height: 100px; overflow: hidden; border-radius: 100%; position: absolute; bottom: 0px; right: 350px; }
 .pm-jecko { width: 100px; height: 100px; overflow: hidden; border-radius: 100%; position: absolute; bottom: 0px; right: 240px; }
@@ -153,7 +155,9 @@ hr {
 .ACSCslider div { text-align: center; }
 .ACSCslider h2 { font: 20px/20px Baron Neue; color: #e5972f; background: white; padding: 5px 8px; display: inline-block; margin: 0px; margin-top: 15px;  }
 .ACSCslider h3 { margin: 0px; margin: 8px 0px; color: white; font: 15px/15px Antic; border-bottom: 2px solid #e5972f; padding-bottom: 5px; }
-.ACSCslider p { text-align: justify; color: white; font: 15px/18px Antic; max-height: 300px; overflow: auto;  }
+.ACSCslider p { text-align: justify; color: white; font: 15px/18px Antic; max-height: 300px; overflow: auto; padding-right: 5px; }
+.ACSCslider p b {  background: #e5972f;  font-weight: normal; }
+.ACSCslider p i { border-bottom: 2px solid #e5972f; font-style: normal; }
 
 /* faq */
 #acsc-faq { padding: 100px 0px; text-align: center; border-bottom: 0px solid #2a6c4e; width: 70%; margin: auto;  }
@@ -207,7 +211,7 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 
 }
 
-.panel a { border-bottom: 2px solid #e5972f; }
+.panel a, .panel b { border-bottom: 2px solid #e5972f; }
 .clearing { clear: both; }
 .faqdates { width: 45%; float: right; }
 
@@ -267,8 +271,8 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 
 .CScheckb { }
 .CScheckb label { position: relative; width: 60px; display: inline-block; }
-.CScheckb .howdidu label { width: 200px; display: block; margin-bottom: 10px; }
-#pubpriv label { position: relative; width: 150px; display: inline-block; }
+.CScheckb .howdidu label { width: 300px; display: block; margin-bottom: 10px; }
+#pubpriv label { position: relative; width: 300px; display: inline-block; }
 #pubpriv { padding-bottom: 15px; }
 
 .CScheckb input {
@@ -339,12 +343,40 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 #first h1, #first h2 { margin: 0px; font: 30px/30px Baron Neue; width: 80%; margin: auto; text-align: left; clear: both;  }
 #first h2 { text-align: right; }
 #first ul { margin: 5px 0px; font: 16px/22px Antic; text-align: justify; width: 70%; margin-bottom: 50px; }
+#second { background: white; color: #2a6c4e; padding: 70px 40px 20px 40px; }
+#second h1, #second h2 { margin: 0px; font: 30px/30px Baron Neue; width: 80%; margin: auto; text-align: left; clear: both;  }
+#second h2 { text-align: right; }
+#second ul { margin: 5px 0px; font: 16px/22px Antic; text-align: justify; width: 70%; margin-bottom: 50px; }
+#second h3 { font: 35px/35px Baron Neue; width: 80%; margin: auto; text-align: center; color: #e5972f; border-bottom: 2px solid #e5972f; padding-bottom: 10px; margin-bottom: 45px; }
 
 .left { width: 80%; margin: auto; }
 .right { width: 80%; margin: auto; text-align: right; }
 .right ul { float: right; }
 .right:after { content: ""; clear: both; }
+.leftimg { float: left; width: 30%; margin-top: 140px;  }
+.leftimg img { width: 100%; }
 
+#csmain ul i { font-style: normal; color: #e5972f; }
+#csmain ul span { background: #e5972f; text-transform: uppercase; padding: 3px; color: white; }
+#csmain ul b { font-weight: normal; border-bottom: 2px solid #e5972f; }
+
+#references { text-align: left; padding: 30px 40px;  background: #6cbb88;  color: white; font: 13px/13px Antic; }
+#references h1 { margin: 0px; font: 30px Baron Neue; margin: auto;  }
+#references ol { margin-top: 0px; margin-bottom: 5px; }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5972f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c98428;
+}
 
 /**** RESPONSIVENESS ****/
 
@@ -391,16 +423,16 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 
 /* what is cs */
 
-#acsc-cs { position: static; text-align: center; height: auto; width: 400px; margin: auto; padding-top: 50px; left: auto; padding-bottom: 90px; text-align: center; }
+#acsc-cs { position: static; text-align: center; height: auto; width: auto; margin: auto; padding-top: 50px; left: auto; padding-bottom: 150px; text-align: center; }
 
-.cs-part { width: 80%; position: static; height: 190px; text-align: left; text-align: center; margin: auto; }
+.cs-part { width: 80%; position: static; left: 0%; height: 190px; text-align: left; text-align: center; margin: auto; }
 
 .cs-cont { text-align: center; }
 
 .cs-cont h1 { margin: 0px; text-align: left; font: 35px/35px Baron Neue; color: white; border-bottom: 10px solid #2a6c4e; display: inline-block; padding-bottom: 5px; }
 .cs-cont p { margin: 15px 0px; font: 15px/18px Antic; color: white; text-align: center; }
 
-.cs-button { background: white; width: 170px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #2a6c4e; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin: auto; margin-top: 30px; margin-bottom: 30px; }
+.cs-button { background: white; width: 170px; text-align: center; font: 12px/12px Antic; text-transform: uppercase; letter-spacing: 1px; padding: 20px 15px; border-radius: 10px; color: #2a6c4e; box-shadow: 0px 3px 5px rgba(0,0,0,0.2); margin: auto; margin-top: 30px; margin-bottom: 30px; position: static; }
 
 
 }
@@ -452,21 +484,24 @@ hr {
 
 #acsc-footer { height: auto; text-align: center; padding: 30px 0px; }
 .footer-cred { text-align: center; position: relative; border-top: 1px solid white; padding-top: 20px; top: auto; left: auto; margin: auto; width: 85%; margin-top: 20px; }
-.footer-logos { position: relative; top: auto; right: auto; display: inline-block; }
-.footer-acsc { position: relative; top: auto; right: auto; background: none; display: inline-block; }
+.footer-logos { position: static; top: auto; right: auto; display: inline-block; }
+.footer-acsc { position: static; top: auto; right: auto; background: none; display: inline-block; }
+.footer-fb { position: relative; top: -3px; margin-left: 10px; left: 0px; display: inline-block; }
 
 }
+
+
+@media screen and (max-width: 880px) {
+.navlinks { display: none; }
+.navlinks li a { width: 15%; }
+.homelink { display: inline-block; }
+}
+
 
 @media screen and (max-width: 720px) {
 
 .pm-contain { width: 70%; }
 
-}
-
-@media screen and (max-width: 660px) {
-.navlinks { display: none; }
-.navlinks li a { width: 15%; }
-.homelink { display: inline-block; }
 }
 
 @media screen and (max-width: 550px) {
@@ -501,7 +536,19 @@ hr {
 #acsc-sched span { width: 25%; margin-right: 3%;  }
 #acsc-sched b { width: 72%; }
 #app-cont .otherstext input { width: calc(100% - 55px); }
+.ACSCslider h2 { font: 16px/16px Baron Neue; }
+.ACSCslider h3 { margin: 0px; margin: 8px 0px; color: white; font: 15px/15px Antic; border-bottom: 2px solid #e5972f; padding-bottom: 5px; }
 
+
+
+.head-count { position: absolute; top: 5px; right: 216px; }
+.head-count-desc { position: absolute; top: 28px; right: 160px; }
+}
+
+@media screen and (max-width: 375px) {
+
+.head-count { position: absolute; top: 5px; right: 160px; }
+.head-count-desc { display: none; }
 }
 
 @media screen and (max-width: 320px) {
@@ -510,4 +557,6 @@ hr {
 #acsc-sched b { width: 69%; }
 #app-cont .otherstext input { width: calc(100% - 55px); }
 
+.head-count { display: none; }
+.head-count-desc { display: none; }
 }
