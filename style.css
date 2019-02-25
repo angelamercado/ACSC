@@ -364,6 +364,8 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 #references h1 { margin: 0px; font: 30px Baron Neue; margin: auto;  }
 #references ol { margin-top: 0px; margin-bottom: 5px; }
 
+#references li { word-wrap: break-word; }
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -447,6 +449,20 @@ font: 13px/16px Antic; text-align: justify; padding: 5px 0px;
 .about-img { background-size: 280px; width: 280px; height: 280px; margin: auto; }
 
 
+}
+
+@media screen and (max-width: 800px) {
+#first, #second { padding: 70px 20px 20px 20px; }
+#first h1, #first h2, #second h1, #second h2 { width: 90%; margin: auto; }
+#first ul {width: 90%; }
+#second ul { width: 90%; margin-bottom: 50px; }
+#second h3 { width: 80%; }
+
+.left { width: 90%; margin: auto; }
+.right { width: 90%; margin: auto; }
+.right ul { float: none; }
+.leftimg { float: none; width: 80%; margin-top: 0px;  margin: 20px auto;  }
+.leftimg img { width: 100%; }
 }
 
 @media screen and (max-width: 764px) {
